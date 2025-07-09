@@ -1,0 +1,136 @@
+/* main.css */
+:root {
+    --primary: #2d3748;
+    --secondary: #4a5568;
+    --accent: #4299e1;
+    --light: #f7fafc;
+    --dark: #1a202c;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+    background-color: var(--light);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Header & Navigation */
+header {
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-lists {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--accent);
+}
+
+.nav-link.active {
+    font-weight: 400;
+    border-bottom: 2px solid var(--accent);
+}
+
+/* Content Styles */
+h1 {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.tech-lists {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    padding: 0;
+}
+
+.tech {
+    background-color: white;
+    padding: 0.75rem;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    list-style: none;
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    margin-top: 2rem;
+}
+
+textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    font-family: inherit;
+    resize: vertical;
+    min-height: 200px;
+}
+
+.btn {
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #3182ce;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-container {
+    flex-direction: column;
+    gap: 1rem;
+    }
+    
+    .nav-lists {
+    gap: 1rem;
+    }
+}
+
+
