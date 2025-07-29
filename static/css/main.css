@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 700px;
     margin: 2rem auto;
     padding: 0 1rem;
 }
@@ -41,7 +41,7 @@ header {
 }
 
 .brand-name {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     font-weight: 500;
     color: white;
     text-decoration: none;
@@ -51,6 +51,7 @@ header {
     display: flex;
     list-style: none;
     gap: 1.5rem;
+    text-decoration: none;
 }
 
 .nav-link {
@@ -121,6 +122,22 @@ textarea {
     background-color: #3182ce;
 }
 
+.analysis_result {
+    padding-left: 20px;
+}
+
+
+/* Mobile-responsive textarea */
+textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    min-height: 150px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .menu-container {
@@ -131,6 +148,14 @@ textarea {
     .nav-lists {
     gap: 1rem;
     }
+}
+
+/* Mobile viewport adjustment */
+@media (max-width: 480px) {
+    textarea {
+    font-size: 14px;
+    min-height: 120px;
+}
 }
 
 
